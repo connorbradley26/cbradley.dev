@@ -34,7 +34,6 @@ export default function Projects({ project }: { project: Project }) {
                 <div>
                     {project.images && project.images.length > 0 && project.images.map((details, index) => {
                         return (<ProjectImages key={index} images={details} />)
-                        
                     })}
                 </div>
             </article>

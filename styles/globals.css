@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body {
-    @apply bg-zinc-900 min-h-screen;
+    @apply bg-black min-h-screen;
 }
