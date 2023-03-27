@@ -10,6 +10,6 @@ export interface Project {
         priority?: boolean,
         images?: {
                 image: StaticImageData,
-                desc: string
+                desc: HtmlElement[]
         }[]
 }

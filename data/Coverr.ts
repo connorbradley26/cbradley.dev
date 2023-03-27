@@ -47,19 +47,39 @@ export const Coverr: Project = {
         
         {
             image: jdAnalysis,
-            desc: "Job Description Analysis"
+            desc:[
+                {
+                    tag: "p",
+                    text: "The first step is to analyze the job description. This is done by using OpenAI's API to generate a summary of the job description."
+                }
+            ] 
         },
         {
             image: keyDetails,
-            desc: "Key Details"
+            desc: [
+                {
+                    tag: "p",
+                    text: "The summary is then used to generate a list of key details. These key details are then used to generate a list of keywords."
+                }
+            ]
         },
         {
             image: resumeAnalysis,
-            desc: "Resume Analysis"
+            desc: [
+                {
+                    tag: "p",
+                    text: "The next step is to analyze the resume. This is done by using OpenAI's API to generate a summary of the resume."
+                }
+            ]
         },
         {
             image: coverLetter,
-            desc: "Cover Letter"
+            desc: [
+                {
+                    tag: "p",
+                    text: "The summary is then used to generate a list of key details. These key details are then used to generate a list of keywords."
+                }
+            ]
         }
     ],
     priority: true
