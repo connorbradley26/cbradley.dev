@@ -8,17 +8,17 @@ const ProjectImages = ({ images }: {images: {
     desc: HtmlElement[];
 }}) => {
     return (
-        <figure>
+        <div>
             <Image src={images.image} alt="Project Image" width={1920} height={1080}
                 placeholder="blur" className='rounded' />
-                {images.desc.length > 0 && images.desc.map((desc, index) => {
+                {images.desc && images.desc.map((desc, index) => {
                     return (
                         createElement(desc.tag,
                             { key: index, ...desc.attributes },
                             desc.children ? desc.children.map(child => createElement(child.tag, { ...child.attributes }, child.text)) : desc.text)
                     )}
                 )}
-        </figure>
+        </div>
     )
 }
 
