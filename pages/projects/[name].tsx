@@ -32,7 +32,7 @@ export default function Projects({ project }: { project: Project }) {
                     <figcaption>{project.name} - Home page</figcaption>
                 </figure>
                 <div>
-                    {project.images.length > 0 && project.images.map((details, index) => {
+                    {project.images && project.images.length > 0 && project.images.map((details, index) => {
                         return (<ProjectImages key={index} images={details} />)
                         
                     })}
