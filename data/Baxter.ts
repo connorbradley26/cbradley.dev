@@ -6,6 +6,7 @@ export const Baxter: Project = {
   name: "Baxter",
   src: baxterPicture,
   alt: "Baxter Project",
+  url: "https://www.wearecassette.com/baxter",
   synopsis: "A 3D interactive training tool for a Blood Dialysis machine, with hours of highly detailed training content.",
   tech: ["React", "BabylonJS", "TypeScript", "Redux", "AWS"],
   description: [

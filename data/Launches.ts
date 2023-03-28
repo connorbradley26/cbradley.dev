@@ -5,6 +5,7 @@ export const Launches: Project = {
     position: 4,
     name: "Launches",
     src: launchesPicture,
+    url: "https://launches-pairing-pi.vercel.app/",
     alt: "Launches Project",
     synopsis: "A NextJS project to display SpaceX launches, built as a test for a job. Code quality was the main focus with only a few hours to complete the project.",
     tech: [

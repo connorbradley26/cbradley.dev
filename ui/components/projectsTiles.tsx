@@ -5,6 +5,7 @@ import { projectsData } from '@/data/Projects';
 
 const ProjectsTiles = () => {
     const projects = projectsData;
+    
     return (
         <div className='mt-20 sm:mx-10'>
            <div className="mx-auto max-w-2xl text-center mb-10">
@@ -18,7 +19,7 @@ const ProjectsTiles = () => {
                     <ProjectTile project={projects.find(x => x.name == "Coverr")} />
                 </div>
                 <div className="col-span-1 space-y-8 mt-8 sm:mt-4">
-                    <ProjectTile project={projects.find(x => x.name == "Crows Football")} />                  
+                    <ProjectTile project={projects.find(x => x.name == "Manchester Crows American Flag Football Website")} />                  
                     {/* <ProjectTile project={projects.find(x => x.name == "Launches")} setSelectedProject={setSelectedProject} /> */}
                 </div>
             </div>

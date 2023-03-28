@@ -10,6 +10,7 @@ export interface Project {
         tech: string[],
         description: HtmlElement[],
         priority?: boolean,
+        url?: string,
         images?: {
                 image: StaticImageData,
                 desc: HtmlElement[]

@@ -10,6 +10,7 @@ export const Coverr: Project = {
   name: "Coverr",
   src: coverrPicture,
   alt: "Coverr Project",
+  url: "https://coverr.vercel.app",
   synopsis:
     "Revolutionize your job search with Coverr - the ultimate tool that analyzes job descriptions, scours your resume, and generates personalized cover letters! \n\nSimply paste in the job description URL and upload your resume, and let our AI-powered system do the rest. Get valuable insights into the technical and soft skills employers are seeking, and receive a custom-crafted cover letter that sets you apart from the competition.\n\nWith Coverr, your dream job is just a few clicks away!",
   tech: [
