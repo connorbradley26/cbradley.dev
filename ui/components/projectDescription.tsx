@@ -15,6 +15,16 @@ const ProjectDescription = ({ project }: {project: Project}) => {
                         </Prism>
                     )
                 }
+                else if (desc.tag == "iframe"){
+                    return (
+                        <iframe key={index} {...desc.attributes} className="w-full h-96" />
+                    )
+                }
+                else if (desc.tag == "h4") {
+                    return (
+                        <h4 key={index} {...desc.attributes} className="text-gray-300 ">{desc.text}</h4>
+                    )
+                }
                 else {
                     return (                
                         createElement(desc.tag, 

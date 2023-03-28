@@ -13,6 +13,6 @@ export interface Project {
         url?: string,
         images?: {
                 image: StaticImageData,
-                desc: HtmlElement[]
+                desc: string
         }[]
 }

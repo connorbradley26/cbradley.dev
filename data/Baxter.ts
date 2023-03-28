@@ -22,9 +22,12 @@ export const Baxter: Project = {
       tag: "iframe",
       attributes: {
         src: "https://player.vimeo.com/video/725980903?h=f0affd81e2&amp;title=0&amp;app_id=122963",
-        width: "640",
-        height: "360",
+        
       }
+    },
+    {
+      tag: "h4",
+      text: "The Challenge"
     },
     {
       tag: "p",

@@ -1,5 +1,10 @@
 import { Project } from "@/types/Project";
-import crowsfootballPicture from '../public/projects/crowsfootball.png';
+import crowsfootballPicture from '../public/projects/crowsfootball/crowsfootball.png';
+import aboutPicture from '../public/projects/crowsfootball/about.png';
+import wherePicture from '../public/projects/crowsfootball/where.png';
+import fixturesPicture from '../public/projects/crowsfootball/fixtures.png';
+import socialsPicture from "../public/projects/crowsfootball/socials.png";
+
 
 export const CrowsFootball: Project = {
         position: 2,
@@ -99,5 +104,25 @@ export const CrowsFootball: Project = {
                 tag: "p",
                 text: "In conclusion, building a new home page for the Manchester Crows was an exciting challenge for me as a software developer and a passionate member of the team. By using Next.js, TailwindCSS, GraphQL, and Firebase, we were able to create a fast, responsive, and SEO-friendly website that reflects our team's values and ambitions. I am proud to be part of this project and look forward to seeing our team thrive online and on the field."
             }
-        ]
-    }
+        ],
+    
+    images: [
+
+        {
+            image: fixturesPicture,
+            desc: "Fixtures are pulled in from Contentful, using GraphQL and displayed using TailwindCSS"
+        },
+        {
+            image: socialsPicture,
+            desc: "Social media links are pulled in from Curator.io, they are a great way to show the culture of the team"
+        },
+        {
+            image: aboutPicture,
+            desc: "A simple about section, with a video explaining what Flag Football is"
+        },
+        {
+            image: wherePicture,
+            desc: "A contact form that uses formspree.io to send emails to management for potential new players to get in touch."
+        }
+    ]
+}
