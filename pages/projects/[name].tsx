@@ -27,7 +27,7 @@ export default function Projects({ project }: { project: Project }) {
             <article className="prose prose-sm sm:prose-invert sm:prose lg:prose-lg xl:prose-xl mx-auto mt-20">
                 <h1>{project.name}</h1>
                 <h4>Synopsis</h4>
-                <i className="whitespace-pre-wrap font-extralight text-gray-400">"{project.synopsis}"</i>
+                <i className="whitespace-pre-wrap font-extralight text-gray-400">&quot;{project.synopsis}&quot;</i>
                     <Image {...project} placeholder="blur" className='rounded' />
                <h4>How and Why I built {project.name}</h4>
                 <ProjectDescription project={project} />

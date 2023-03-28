@@ -5,6 +5,7 @@ import { Prism } from '@mantine/prism'
 const ProjectDescription = ({ project }: {project: Project}) => {
     return (
         <>
+        
         {project.description.map((desc, index) => {
             
                 if (desc.tag == "Prism"){
