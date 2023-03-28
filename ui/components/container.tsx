@@ -2,9 +2,17 @@
 
 const Container = (props: any) => {
     return (
-        <div className="max-w-7xl border-l border-r border-zinc-700 mx-auto bg-zinc-900 min-h-screen py-10 px-10 text-white">
+        <>
+            <div className="fixed inset-0 flex justify-center sm:px-8 -z-10">
+                <div className="flex w-full max-w-7xl lg:px-8">
+                    <div className="w-full bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20">
+                    </div>
+                </div>
+            </div>
+            <div className="max-w-5xl mx-auto my-10">
             {props.children}
-        </div>
+            </div>
+        </>
     );
 };
 

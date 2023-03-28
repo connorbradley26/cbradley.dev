@@ -18,7 +18,7 @@ const Header = (props: Props) => {
             <div className=" flex-grow flex items-center flex-col my-auto">
                 <p className="mb-4 text-zinc-400">Hi, I'm </p>
                 <h1 className="text-7xl font-extrabold leading-none tracking-tight mb-1 ">Connor Bradley 👋</h1>
-                <h2 className="text-lg text-zinc-600"> Software Developer based in Macclesfield, Cheshire (UK)! </h2>
+                <h2 className="text-lg text-zinc-600"> Software Developer based in Cheshire, UK </h2>
                 <Socials />
             </div>
         
