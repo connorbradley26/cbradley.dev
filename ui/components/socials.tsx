@@ -27,11 +27,11 @@ const socialsList = [
 const Socials = () => {
     return (
         <div className=" w-full mx-auto flex justify-center mt-2">
-            <div className='w-full md:w-1/5 flex flex-row justify-around'>
+            <div className='w-full md:w-1/3 flex flex-row justify-around'>
             {socialsList.map((social, index) => {
                 return (
                     <Link href={social.url} key={index}>
-                        <FontAwesomeIcon key={social.name} icon={social.icon} className="h-6"/>
+                        <FontAwesomeIcon key={social.name} icon={social.icon} className="h-6 hover:text-zinc-400"/>
                     </Link>
                 )
             })}
