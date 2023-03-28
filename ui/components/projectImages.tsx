@@ -14,7 +14,7 @@ const ProjectImages = ({ images }: {images: {
                 {images.desc && images.desc.map((desc, index) => {
                     return (
                         createElement(desc.tag,
-                            { key: index, ...desc.attributes },
+                            { key: index, ...desc.attributes, class: `${desc.attributes?.className} whitespace-pre-wrap font-extralight`},
                             desc.children ? desc.children.map(child => createElement(child.tag, { ...child.attributes }, child.text)) : desc.text)
                     )}
                 )}

@@ -6,6 +6,8 @@ export interface Project {
         name: string
         src: StaticImageData,
         alt: string,
+        synopsis: string,
+        tech: string[],
         description: HtmlElement[],
         priority?: boolean,
         images?: {

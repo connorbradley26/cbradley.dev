@@ -6,6 +6,12 @@ export const Launches: Project = {
     name: "Launches",
     src: launchesPicture,
     alt: "Launches Project",
+    synopsis: "A NextJS project to display SpaceX launches, built as a test for a job. Code quality was the main focus with only a few hours to complete the project.",
+    tech: [
+        "Next.js",
+        "TailwindCSS",
+        "Vercel",
+    ],
     description: [
         {
         tag: "p",

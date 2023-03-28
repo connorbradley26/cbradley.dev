@@ -26,11 +26,12 @@ export default function Projects({ project }: { project: Project }) {
         <>
             <article className="prose prose-sm sm:prose-invert sm:prose lg:prose-lg xl:prose-xl mx-auto mt-20">
                 <h1>{project.name}</h1>
-                <ProjectDescription project={project} />
-                <figure>
+                <h4>Synopsis</h4>
+                <i className="whitespace-pre-wrap font-extralight text-gray-400">"{project.synopsis}"</i>
                     <Image {...project} placeholder="blur" className='rounded' />
-                    <figcaption>{project.name} - Home page</figcaption>
-                </figure>
+               <h4>How and Why I built {project.name}</h4>
+                <ProjectDescription project={project} />
+
                 <div>
                     {project.images && project.images.length > 0 && project.images.map((details, index) => {
                         return (<ProjectImages key={index} images={details} />)

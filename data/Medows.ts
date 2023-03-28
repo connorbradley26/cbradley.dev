@@ -6,6 +6,12 @@ export const Medows: Project = {
     name: "Medows",
     src: medowsPicture,
     alt: "Medows Project",
+    synopsis: "A communication tool to aide GP's and care home staff in the management of the medical needs of care home residents, which now runs within the NHS.",
+    tech: [
+        "Vue.js",
+        "Buefy",
+        "Firebase"
+    ],
     description:[
         {
             tag: "p",

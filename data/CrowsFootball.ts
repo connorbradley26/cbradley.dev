@@ -7,6 +7,13 @@ export const CrowsFootball: Project =
         name: "Crows Football",
         src: crowsfootballPicture,
         alt: "Crows Football Project",
+        synopsis: "A home page for the Manchester Crows, an American Flag Football team, with a heavy focus on SEO.",
+        tech: [
+            "Next.js",
+            "TailwindCSS",
+            "GraphQL",
+            "Firebase"
+        ],
         description:[
             {
                 tag: "p",
