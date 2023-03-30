@@ -3,13 +3,18 @@ import techNameToImage from '@/lib/techNameToImage'
 import { Project } from '@/types/Project'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState } from 'react'
 import ProjectDescription from './projectDescription'
+import ProjectModal from './projectModal'
 
 
 export default function ProjectPage({ project }: { project: Project }) {
+  const [open, setOpen] = useState(false)
+  const [modalContent, setModalContent] = useState({ image: project.src, desc: '' });
 
   return (
     <div className="mt-20">
+      <ProjectModal isOpen={open} project={project} image={modalContent} onClose={() => setOpen(false)} />
       <div className="pt-6">
         {/* Image gallery */}
         {project.images && project.images.length > 3 ?
@@ -19,6 +24,7 @@ export default function ProjectPage({ project }: { project: Project }) {
                 src={project.images[0] && project.images[0].image}
                 alt={project.images[0] && project.images[0].desc}
                 className="h-full w-full object-cover object-center"
+                onClick={() => {setModalContent({ image: project.images[0].image, desc: project.images[0].desc }); setOpen(true)}}
               />
             </div>
             <div className="hidden lg:grid lg:grid-cols-1 lg:gap-y-8">
@@ -27,6 +33,7 @@ export default function ProjectPage({ project }: { project: Project }) {
                   src={project.images[1] && project.images[1].image}
                   alt={project.images[1] && project.images[1].desc}
                   className="h-full w-ful&& object-cover object-center"
+                  onClick={() => {setModalContent({ image: project.images[1].image, desc: project.images[1].desc }); setOpen(true)}}
                 />
               </div>
               <div className="aspect-w-3 aspect-h-2 overflow-hidden rounded-lg">
@@ -34,6 +41,7 @@ export default function ProjectPage({ project }: { project: Project }) {
                   src={project.images[2] && project.images[2].image}
                   alt={project.images[2] && project.images[2].desc}
                   className="h-full w-full object-cover object-center"
+                  onClick={() => {setModalContent({ image: project.images[2].image, desc: project.images[2].desc }); setOpen(true)}}
                 />
               </div>
             </div>
@@ -42,6 +50,7 @@ export default function ProjectPage({ project }: { project: Project }) {
                 src={project.images[3] && project.images[3].image}
                 alt={project.images[3] && project.images[3].desc}
                 className="h-full w-full object-cover object-center"
+                onClick={() => {setModalContent({ image: project.images[3].image, desc: project.images[3].desc }); setOpen(true)}}
               />
             </div>
           </div> : project.images ?
@@ -49,8 +58,13 @@ export default function ProjectPage({ project }: { project: Project }) {
             src={project.images[0] && project.images[0].image}
             alt={project.images[0] && project.images[0].desc}
             className="h-full w-full object-cover object-center"
+            
           />
-          : <></>
+          : <Image
+              src={project.src }
+              alt={project.name}
+              className="h-full w-full object-cover object-center"
+            /> 
         }
 
         {/* Product info */}

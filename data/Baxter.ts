@@ -1,5 +1,5 @@
 import { Project } from "@/types/Project";
-import baxterPicture from "../public/projects/baxter.webp";
+import baxterPicture from "../assets/projects/baxter.webp";
 
 export const Baxter: Project = {
   position: 1,

@@ -1,9 +1,9 @@
 import { Project } from "@/types/Project";
-import crowsfootballPicture from '../public/projects/crowsfootball/crowsfootball.png';
-import aboutPicture from '../public/projects/crowsfootball/about.png';
-import wherePicture from '../public/projects/crowsfootball/where.png';
-import fixturesPicture from '../public/projects/crowsfootball/fixtures.png';
-import socialsPicture from "../public/projects/crowsfootball/socials.png";
+import crowsfootballPicture from '../assets/projects/crowsfootball/crowsfootball.png';
+import aboutPicture from '../assets/projects/crowsfootball/about.png';
+import wherePicture from '../assets/projects/crowsfootball/where.png';
+import fixturesPicture from '../assets/projects/crowsfootball/fixtures.png';
+import socialsPicture from "../assets/projects/crowsfootball/socials.png";
 
 
 export const CrowsFootball: Project = {

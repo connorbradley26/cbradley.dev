@@ -1,8 +1,8 @@
 import { Project } from "@/types/Project";
-import medowsPicture from '../public/projects/medows/medows.png';
-import addRequestPicture from '../public/projects/medows/addRequest.png';
-import requestsListPicture from '../public/projects/medows/requestsList.png';
-import responsePicture from '../public/projects/medows/response.png';
+import medowsPicture from '../assets/projects/medows/medows.png';
+import addRequestPicture from '../assets/projects/medows/addRequest.png';
+import requestsListPicture from '../assets/projects/medows/requestsList.png';
+import responsePicture from '../assets/projects/medows/response.png';
 
 export const Medows: Project = {
     position: 3,
@@ -70,6 +70,10 @@ export const Medows: Project = {
         {
             image: responsePicture,
             desc: "This is the response page where GPs can add a response to a request from Care Home staff."
+        },
+        {
+            image: medowsPicture,
+            desc: "This is the homepage of the Medows website."
         }
     ]
 };

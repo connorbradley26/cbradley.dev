@@ -1,5 +1,5 @@
 import { Project } from "@/types/Project";
-import launchesPicture from '../public/projects/launches.png';
+import launchesPicture from '../assets/projects/launches.png';
 
 export const Launches: Project = {
     position: 4,

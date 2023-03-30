@@ -11,8 +11,10 @@ export interface Project {
         description: HtmlElement[],
         priority?: boolean,
         url?: string,
-        images?: {
-                image: StaticImageData,
-                desc: string
-        }[]
+        images?: ProjectImages[]
+}
+
+export interface ProjectImages {
+        image: StaticImageData,
+        desc: string
 }

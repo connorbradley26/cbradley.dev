@@ -1,9 +1,9 @@
-import coverrPicture from "../public/projects/coverr/coverr.png";
+import coverrPicture from "../assets/projects/coverr/coverr.png";
 import { Project } from "@/types/Project";
-import coverLetter from "../public/projects/coverr/coverr-coverletter.png";
-import jdAnalysis from "../public/projects/coverr/coverr-jdanalysis.png";
-import keyDetails from "../public/projects/coverr/coverr-keydetails.png";
-import resumeAnalysis from "../public/projects/coverr/coverr-resumeanalysis.png";
+import coverLetter from "../assets/projects/coverr/coverr-coverletter.png";
+import jdAnalysis from "../assets/projects/coverr/coverr-jdanalysis.png";
+import keyDetails from "../assets/projects/coverr/coverr-keydetails.png";
+import resumeAnalysis from "../assets/projects/coverr/coverr-resumeanalysis.png";
 
 export const Coverr: Project = {
   position: 0,

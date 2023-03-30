@@ -3,37 +3,37 @@
 export default function techNameToImage(name: string) {
     switch (name) {
         case 'React':
-            return require('../public/techicons/react.svg')
+            return require('../assets/techicons/react.svg')
         case 'Node.js':
-            return require('../public/techicons/nodejs.svg')
+            return require('../assets/techicons/nodejs.svg')
         case 'JavaScript':
-            return require('../public/techicons/javascript.svg')
+            return require('../assets/techicons/javascript.svg')
         case 'TypeScript':
-            return require('../public/techicons/typescript.svg')
+            return require('../assets/techicons/typescript.svg')
         case 'Next.js':
-            return require('../public/techicons/nextjs.svg')
+            return require('../assets/techicons/nextjs.svg')
         case 'BabylonJS':
-            return require('../public/techicons/babylonjs.svg')
+            return require('../assets/techicons/babylonjs.svg')
         case 'Prisma':
-            return require('../public/techicons/prisma.svg')
+            return require('../assets/techicons/prisma.svg')
         case 'GraphQL':
-            return require('../public/techicons/graphql.svg')
+            return require('../assets/techicons/graphql.svg')
         case 'Firebase':
-            return require('../public/techicons/firebase.svg')
+            return require('../assets/techicons/firebase.svg')
         case 'Gatsby':
-            return require('../public/techicons/gatsby.svg')
+            return require('../assets/techicons/gatsby.svg')
         case 'Vercel':
-            return require('../public/techicons/vercel.svg')
+            return require('../assets/techicons/vercel.svg')
         case 'TailwindCSS':
-            return require('../public/techicons/tailwindcss.svg')
+            return require('../assets/techicons/tailwindcss.svg')
         case 'OpenAI':
-            return require('../public/techicons/openai.svg')
+            return require('../assets/techicons/openai.svg')
         case 'PostgreSQL':
-            return require('../public/techicons/postgresql.svg')
+            return require('../assets/techicons/postgresql.svg')
         case 'Buefy':
-            return require('../public/techicons/buefy.png')
+            return require('../assets/techicons/buefy.png')
         case 'Vue.js':
-            return require('../public/techicons/vue.svg')
+            return require('../assets/techicons/vue.svg')
         default:
             return null;
     }

@@ -28,7 +28,7 @@ const ProjectDescription = ({ project }: {project: Project}) => {
                 else {
                     return (                
                         createElement(desc.tag, 
-                                { key: index, ...desc.attributes, class: `${desc.attributes?.className} text-gray-300 whitespace-pre-wrap font-extralight` },
+                                { key: index, ...desc.attributes, className: `${desc.attributes?.className} text-gray-300 whitespace-pre-wrap font-extralight` },
                                 desc.children ? desc.children.map((child, index) => createElement(child.tag, { key: index, ...child.attributes }, child.text)) : desc.text)
                     )
                 }
