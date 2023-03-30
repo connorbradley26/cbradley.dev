@@ -1,3 +1,4 @@
+import WIPNotice from "./WIPNotice";
 
 
 const Container = (props: any) => {
@@ -10,6 +11,7 @@ const Container = (props: any) => {
                 </div>
             </div>
             <div className="max-w-7xl mx-auto my-10">
+                <WIPNotice />
             {props.children}
             </div>
         </>
