@@ -1,22 +1,25 @@
 
 import Image from "next/image";
-import Connor from "../public/connor.jpg";
+import Connor from "../public/connor.png";
 
 export function Contact() {
     return (
 
         <div className="relative grid grid-cols-2 ">
+            <div className="my-auto">
                 <Image
-                    className="w-full object-cover my-auto"
+                    className="w-full object-cover  rounded shadow"
                     src={Connor}
-                    alt="Picture of me"
+                    alt="Picture of me and my cat Vimto"
                 />
+                <p className="text-sm font-extralight">Me and Vimto, my supervisor. He accepts tuna and chicken as payment.</p>
+            </div>
             <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 lg:mx-auto lg:grid lg:max-w-7xl  lg:pt-32">
                 <div className="px-6 lg:px-8">
                     <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
                         <h2 className="text-3xl font-bold tracking-tight text-gray-200">Let's work together</h2>
-                        <p className="mt-2 text-lg leading-8 text-gray-300">
-                            I&apos;m currently looking for a new role and am open to a wide range of opportunities. I&apos;m also keen to hear about any interesting projects you may be working on.
+                        <p className="mt-2 text-lg leading-8 text-gray-400">
+                            I&apos;m currently looking for a new role and I am open to a wide range of opportunities. I&apos;m also keen to hear about any interesting projects you may be working on.
                         </p>
                         <form action="#" method="POST" className="mt-16">
                             <div className="grid grid-cols-1 gap-y-6 gap-x-8 sm:grid-cols-2">
@@ -76,30 +79,11 @@ export function Contact() {
                                         />
                                     </div>
                                 </div>
-                                <div className="sm:col-span-2">
-                                    <div className="flex justify-between text-sm leading-6">
-                                        <label htmlFor="phone" className="block font-semibold text-gray-200">
-                                            Phone
-                                        </label>
-                                        <p id="phone-description" className="text-gray-400">
-                                            Optional
-                                        </p>
-                                    </div>
-                                    <div className="mt-2.5">
-                                        <input
-                                            type="tel"
-                                            name="phone"
-                                            id="phone"
-                                            autoComplete="tel"
-                                            aria-describedby="phone-description"
-                                            className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-700 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6"
-                                        />
-                                    </div>
-                                </div>
+                               
                                 <div className="sm:col-span-2">
                                     <div className="flex justify-between text-sm leading-6">
                                         <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-200">
-                                            How can we help you?
+                                            How can I help you?
                                         </label>
                                         <p id="message-description" className="text-gray-400">
                                             Max 500 characters

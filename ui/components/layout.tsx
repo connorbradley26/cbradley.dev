@@ -9,7 +9,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     return (
         <>
             <Container>
-                <Navbar />
+                {/* <Navbar /> */}
                 <main className={`${poppins.className} text-zinc-100`}>{children}</main>
             </Container>
         </>

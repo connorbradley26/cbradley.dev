@@ -2,6 +2,7 @@ import { projectsData } from "@/data/Projects"
 import { Project } from "@/types/Project";
 import ProjectDescription from "@/ui/components/projectDescription";
 import ProjectImages from "@/ui/components/projectImages";
+import ProjectPage from "@/ui/components/projectPage";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -26,7 +27,19 @@ export default function Projects({ project }: { project: Project }) {
 
     return (
         <>
-            <article className="prose sm:prose-lg prose-invert mx-auto mt-20">
+        <ProjectPage project={project}/>
+         {/* <div className="mt-20 snap-x snap-mandatory flex overflow-x-scroll overflow-y-hidden">
+            {project.images && project.images.length > 0 && project.images.map((details, index) => {
+                return (
+                    <Image
+                    src={details.image}
+                    alt={details.desc}
+                    className="h-64 w-64 mx-20 object-center snap-center"
+                  />
+                )
+            })}   
+        </div> */}
+            {/* <article className="prose sm:prose-lg prose-invert mx-auto mt-20">
                 {project.images && project.images.length > 0 &&
                         <ProjectImages images={project.images} />
                 }
@@ -42,12 +55,8 @@ export default function Projects({ project }: { project: Project }) {
                 <ProjectDescription project={project} />
 
                 <div>
-         
-                    {/* {project.images && project.images.length > 0 && project.images.map((details, index) => {
-                        return (<ProjectImages key={index} images={details} />)
-                    })} */}
                 </div>
-            </article>
+            </article>  */}
 
 
         </>

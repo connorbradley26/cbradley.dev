@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 const ProjectTile = ({ project } : { project: Project }) => {
-    console.log("PROJJJEECCCTTTT", project)
     if (!project) return (<div>loading</div>);
     return (
         <div className='h-full relative group' >

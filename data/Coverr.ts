@@ -53,7 +53,7 @@ export const Coverr: Project = {
     },
     {
       tag: "p",
-      text: "Finally, I created a cover letter generator that could take the job requirements and the candidate's resume details and create a personalized cover letter that highlighted the candidate's strengths and qualifications. This was perhaps the most challenging part of the process, as I had to balance the need for personalization with the need for efficiency. However, after many iterations, I was able to create a system that could generate a high-quality cover letter in just a few minutes.",
+      text: "Finally, I created a cover letter generator that could take the job requirements and the candidate's resume details and create a personalized cover letter that highlighted the candidate's strengths and qualifications. This was perhaps the most challenging part of the process, as I had to balance the need for personalization with the need for efficiency. However, after many iterations, I was able to create a system that could generate a high-quality cover letter in just 30 seconds.",
     },
     {
         tag: "h4",

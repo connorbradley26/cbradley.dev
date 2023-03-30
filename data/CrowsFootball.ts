@@ -17,7 +17,8 @@ export const CrowsFootball: Project = {
             "Next.js",
             "TailwindCSS",
             "GraphQL",
-            "Firebase"
+            "Firebase",
+            "TypeScript"
         ],
         description:[
             {

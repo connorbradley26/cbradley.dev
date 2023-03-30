@@ -4,7 +4,7 @@ import { Prism } from '@mantine/prism'
 
 const ProjectDescription = ({ project }: {project: Project}) => {
     return (
-        <>
+        <div className="prose prose-invert prose-lg">
         
         {project.description.map((desc, index) => {
             
@@ -22,7 +22,7 @@ const ProjectDescription = ({ project }: {project: Project}) => {
                 }
                 else if (desc.tag == "h4") {
                     return (
-                        <h4 key={index} {...desc.attributes} className="text-gray-300 ">{desc.text}</h4>
+                        <h4 key={index} {...desc.attributes} className="text-gray-300 lead ">{desc.text}</h4>
                     )
                 }
                 else {
@@ -33,7 +33,7 @@ const ProjectDescription = ({ project }: {project: Project}) => {
                     )
                 }
             })}
-        </>
+        </div>
     )
 }
 
