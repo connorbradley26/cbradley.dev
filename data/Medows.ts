@@ -2,7 +2,7 @@ import { Project } from "@/types/Project";
 import medowsPicture from '../assets/projects/medows/medows.png';
 import addRequestPicture from '../assets/projects/medows/addRequest.png';
 import requestsListPicture from '../assets/projects/medows/requestsList.png';
-import responsePicture from '../assets/projects/medows/response.png';
+import responsePicture from '../assets/projects/medows/Response.png';
 
 export const Medows: Project = {
     position: 3,
