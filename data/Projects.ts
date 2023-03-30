@@ -11,5 +11,5 @@ export const projectsData: Project[] = [
     Baxter,
     CrowsFootball,
     Medows,
-    Launches   
+    // Launches   
 ]

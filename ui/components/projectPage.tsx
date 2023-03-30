@@ -9,49 +9,48 @@ import ProjectDescription from './projectDescription'
 export default function ProjectPage({ project }: { project: Project }) {
 
   return (
-    <div className="">
+    <div className="mt-20">
       <div className="pt-6">
-
-
         {/* Image gallery */}
         {project.images && project.images.length > 3 ?
           <div className="mx-auto bg-zinc-800 py-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-8">
             <div className=" aspect-h-4 hidden overflow-hidden rounded-lg lg:block">
               <Image
-                src={project.images[0].image}
-                alt={project.images[0].desc}
+                src={project.images[0] && project.images[0].image}
+                alt={project.images[0] && project.images[0].desc}
                 className="h-full w-full object-cover object-center"
               />
             </div>
             <div className="hidden lg:grid lg:grid-cols-1 lg:gap-y-8">
               <div className="aspect-w-3 aspect-h-2 overflow-hidden rounded-lg">
                 <Image
-                  src={project.images[1].image}
-                  alt={project.images[1].desc}
-                  className="h-full w-full object-cover object-center"
+                  src={project.images[1] && project.images[1].image}
+                  alt={project.images[1] && project.images[1].desc}
+                  className="h-full w-ful&& object-cover object-center"
                 />
               </div>
               <div className="aspect-w-3 aspect-h-2 overflow-hidden rounded-lg">
                 <Image
-                  src={project.images[2].image}
-                  alt={project.images[2].desc}
+                  src={project.images[2] && project.images[2].image}
+                  alt={project.images[2] && project.images[2].desc}
                   className="h-full w-full object-cover object-center"
                 />
               </div>
             </div>
             <div className="aspect-w-4 aspect-h-5 sm:overflow-hidden sm:rounded-lg lg:aspect-w-3 lg:aspect-h-4">
               <Image
-                src={project.images[3].image}
-                alt={project.images[3].desc}
+                src={project.images[3] && project.images[3].image}
+                alt={project.images[3] && project.images[3].desc}
                 className="h-full w-full object-cover object-center"
               />
             </div>
-          </div> :
+          </div> : project.images ?
           <Image
-            src={project.images[0].image}
-            alt={project.images[0].desc}
+            src={project.images[0] && project.images[0].image}
+            alt={project.images[0] && project.images[0].desc}
             className="h-full w-full object-cover object-center"
           />
+          : <></>
         }
 
         {/* Product info */}

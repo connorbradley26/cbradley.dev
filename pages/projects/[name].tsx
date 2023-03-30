@@ -1,9 +1,6 @@
 import { projectsData } from "@/data/Projects"
 import { Project } from "@/types/Project";
-import ProjectDescription from "@/ui/components/projectDescription";
-import ProjectImages from "@/ui/components/projectImages";
 import ProjectPage from "@/ui/components/projectPage";
-import Image from "next/image";
 import Link from "next/link";
 
 export function getStaticProps(context: { params: { name: string; }; }) {
@@ -27,6 +24,10 @@ export default function Projects({ project }: { project: Project }) {
 
     return (
         <>
+        {/* Back to homepage button */}
+        <div className="absolute top-2 left-10 m-4">
+            <Link href="/" className="text-gray-300 text-2xl font-bold">← Home</Link>
+        </div>
         <ProjectPage project={project}/>
          {/* <div className="mt-20 snap-x snap-mandatory flex overflow-x-scroll overflow-y-hidden">
             {project.images && project.images.length > 0 && project.images.map((details, index) => {

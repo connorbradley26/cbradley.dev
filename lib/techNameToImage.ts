@@ -30,6 +30,10 @@ export default function techNameToImage(name: string) {
             return require('../public/techicons/openai.svg')
         case 'PostgreSQL':
             return require('../public/techicons/postgresql.svg')
+        case 'Buefy':
+            return require('../public/techicons/buefy.png')
+        case 'Vue.js':
+            return require('../public/techicons/vue.svg')
         default:
             return null;
     }
